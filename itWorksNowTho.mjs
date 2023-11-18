@@ -9,6 +9,7 @@ await cp(pathToDJSDTS, pathToDJSDMTS);
 
 const originalPackageJson = await readFile(pathToDJSPkgJson, 'utf8');
 const packageJson = JSON.parse(originalPackageJson);
+packageJson.exports = packageJson.exports ?? {};
 packageJson.exports['.'] = {
 	import: {
 		types: './typings/index.d.mts',
