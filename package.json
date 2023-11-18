@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@discordjs/core": "^1.1.1",
+    "discord.js": "^14.14.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
